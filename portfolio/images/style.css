@@ -1,0 +1,200 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    background-color: rgb(34, 16, 16);
+    height: 50px;
+    color: antiquewhite;
+}
+.front{
+    background-color: rgb(183, 228, 132);
+    
+     height: 100vh;/*vh(view Port height) fill the complete screen accourding to aout brrawser screen size */
+      /* 
+      % size the item accourding to parent size
+      em size the text according to the parent text 1em,2em,0.5em
+      rem  size the itme according to the root element
+       */
+       
+     z-index: -1;
+     position:sticky;
+     top: 0%;
+  
+    }
+a{
+    color: aliceblue;
+    margin-right:200px;
+}
+#logo{
+    color: orange;
+}
+div{
+ color: antiquewhite;
+}
+button{
+    background-color: rgb(255, 132, 0);
+    color: aliceblue;
+    
+}
+#div{
+    background-color: aqua;
+    text-align: center;
+    
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    /* border-width: 20px;
+    border-style: dotted;
+    border-color: blueviolet;
+    text-align: center; */
+    
+    border:solid  brown  30px;
+    border-radius: 50%;
+    padding: 50px;
+    
+
+}
+/* button{
+    /* background-color: blue; 
+    color: blanchedalmond;
+    align-self: right;
+    
+} */
+h1{
+    text-decoration:line-through;
+    font-weight:500;
+}
+a{
+    text-decoration: none;
+}
+.p1{
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+.p1{
+   
+    background-color: rgba(0,0,255,0.5);
+}
+
+.d{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 2px solid brown;
+    display: inline-block;
+} 
+
+#d1{
+     position: static;/*bydefault */
+}
+#d2{
+    /* position: relative;relative itself  item change its posititon accourdind to its initial position */
+    position: relative; 
+    top:20px;
+
+}
+#d3{
+    /* position:absolute; position relative to its closest positioned(non static)ancister*/
+    /* position:absolute; */
+     position: sticky;/* position of the element is fixex when visible */
+    top:0px;
+    background-color: blue; 
+}
+#d4{
+    /* position:fixed;  item position according to the brawser*/
+    position:fixed;
+    left:50px;
+    background-color: brown;
+}
+
+.d1{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 2px solid brown;
+    display: inline-block;
+}
+
+.d2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(122, 98, 214);
+    margin: 20px;
+    border: 2px solid brown;
+    display: inline-block;
+}
+
+.d3{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 2px solid brown;
+    display: inline-block;
+    /* transition-property: all;
+    transition-duration: 2s; */
+    /* transition-timing-function: ease; */
+    animation-name: coloranimation;
+    animation-duration: 5.s;;
+    /* animation-timing-function: ease-in; */
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes coloranimation {
+    /* from{background-color: aqua;}
+    to{background-color: red;} */
+    from{left:0px}
+    to{left:200px}
+    
+}
+.d3:hover{
+   /* background-color: red;
+     transform:rotate(54deg);
+    transform:translateX(20px);
+    transform: skew(90deg); */
+}
+
+
+/* .container div{
+    height: 200px;
+    width: 200px;
+   
+} */
+.container{
+    border: 2px solid black;
+    height: 500px;
+    
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    flex-shrink: 2;
+
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:20px solid yellow;
+    border-top:20px solid #4ECDC4;
+    animation: spinAnimation 3s ease-in 0s infinite normal;
+}
+
+@keyframes spinAnimation {
+    from{transform:rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
